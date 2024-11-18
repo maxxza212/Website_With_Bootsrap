@@ -1,0 +1,238 @@
+/* Styling tambahan untuk dropdown */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+/* Dropdown menu tampil jika ada class .show */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    margin-top: 0;
+    /* Menyesuaikan margin dengan posisi hover */
+}
+
+
+/* Jumbotron Styling */
+.jumbotron-custom {
+    background-color: rgba(255, 255, 255, 0.37);
+    /* Latar belakang putih dengan transparansi */
+    color: rgba(0, 0, 0, 0.67);
+    /* Tulisan hitam dengan transparansi */
+    border-radius: 0;
+    /* Tanpa Radius */
+}
+
+.carousel-caption.text-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    /* Membuat teks agak ke dalam dari sisi kiri */
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    max-width: 400px;
+    /* Membatasi lebar teks agar terlihat rapi */
+    padding: 10px 0;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    margin: 0;
+}
+
+.carousel-caption h1 {
+    margin-bottom: 10px;
+    /* Jarak antara judul dan paragraf */
+}
+
+.carousel-caption p {
+    margin-bottom: 20px;
+    /* Jarak antara paragraf dan tombol */
+}
+
+/* Styling button */
+.btn-outline-light {
+    color: #201f1f;
+    /* Warna teks button */
+    border-color: #ffffff;
+    /* Warna border button */
+}
+
+/* Efek hover pada button */
+.btn-outline-light:hover {
+    background-color: #007bff89;
+    /* Warna biru saat hover */
+    color: #ffffff;
+    /* Warna teks putih */
+}
+
+/* Styling paragraf untuk menjadi putih */
+.jumbotron-custom p {
+    color: #ffffff;
+    /* Ubah warna paragraf menjadi putih */
+}
+
+
+/* Grid Box Styling */
+.grid-box {
+    padding: 20px;
+    margin: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    /* Gradasi awal */
+    transition: transform 0.3 ease, background 0.3 ease;
+    /* Ubah ke background untuk konsistensi */
+}
+
+/* Animasi warna dan efek hover */
+.grid-box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #25e7f5, #1afe98);
+    /* Gradasi saat hover */
+}
+
+/* Additional Styling for Titles */
+h2 {
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* Listbox Container Styling */
+.listbox-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Listbox Wrapper */
+.listbox-wrapper {
+    margin-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Listbox Item Styling */
+.list-item {
+    min-width: 300px;
+    /* Lebar setiap item list */
+    margin: 0 10px;
+    /* Spasi antar list item */
+}
+
+/* Scroll buttons */
+.scroll-left,
+.scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* Tambahkan efek transisi untuk hover */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.03);
+    /* Membesarkan kartu saat di hover */
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    display: flex;
+    /* Agar kartu berada dalam satu baris */
+    transition: transform 0.3s ease;
+    /* Transisi halus saat scroll */
+}
+
+/* sweetalert2 */
+.swal2-confim{
+    background-color: #3085d6 !important;
+}
+
+.swal2-cancel{
+    background-color: #d33 !important;
+}
+
+/* footer */
+footer{
+    background-color: #000000;
+    padding: 10px 0;
+    bottom: 0px;
+}
+
+.nav-tabs{
+    border-top: 1px solid #dee2e6;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: none;
+    color: #fff;
+    border-bottom: 3px solid #007bffbd;
+}
+
+.tab-content{
+    padding: 24px;
+    background-color: #212529;
+}
+
+.tab-content p,
+.tab-content ul {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.tab-content ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tab-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab-content ul li a:hover {
+    color: #007bff;
+}
+    

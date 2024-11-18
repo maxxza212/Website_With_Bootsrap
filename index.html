@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark"> <!--menggunakan tema gelap-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bootstrap</title>
+    <!--Bootstrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.nike.com/id/">
+            <img src="https://www.citypng.com/public/uploads/preview/hd-white-nike-logo-transparent-png-701751694777170hrodp6c2ek.png" alt="NIKE Logo" width="40" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown" id="dropdownHover">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        aria-expanded="false">
+                        <!--Services-->
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="dropdownMenu">
+                        <li><a class="dropdown-item" href="#">Services 1</a></li>
+                        <li><a class="dropdown-item" href="#">Services 2</a></li>
+                        <li><a class="dropdown-item" href="#">Services 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!--Jumbotron-->
+    <!-- <div class="p-5 mb-4 jumbotron-custom">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">NOTHING BEATS THE CITY</h1>
+            <p class="col-md-8 fs-4">Built to overcome anything the city throws your way.
+            </p>
+            <button class="btn btn-outline-light" type="button" >Learn more</button>
+        </div> -->
+    <!-- Jumbotron Carousel -->
+    <div id="jumbotronCarousel" class="carousel slide jumbotron-custom" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="Screenshot 2024-11-06 174346.png" class="d-block w-100" alt="Gambar 1"
+                    style="height: 500px; object-fit: cover;">
+                <!-- Teks dan tombol -->
+                <div
+                    class="carousel-caption d-flex flex-column align-items-start justify-content-center text-container">
+                    <h1 class="display-5 fw-bold text-white">NOTHING BEATS THE CITY</h1>
+                    <p class="col-md-8 fs-4 text-white">Built to overcome anything the city throws your way.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="bahan web3.png" class="d-block w-100" alt="Gambar 2" style="height: 500px; object-fit: cover;">
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="Screenshot 2024-11-06 212302.png" class="d-block w-100" alt="Gambar 3" style="height: 500px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#jumbotronCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#jumbotronCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!--Grid System Examples-->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Bootstrap Grid System Examples</h2>
+        <!--Basic 12-Column Grid-->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="grid-box">Column 1 of 12</div>
+            </div>
+            <div class="col">
+                <div class="grid-box">Column 2 of 12</div>
+            </div>
+            <div class="col">
+                <div class="grid-box">Column 3 of 12</div>
+            </div>
+            <div class="col">
+                <div class="grid-box">Column 4 of 12</div>
+            </div>
+        </div>
+
+        <!--Two-Column Layout (50/50)-->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="grid-box">Column 1 (50%)</div>
+            </div>
+            <div class="col-md-6">
+                <div class="grid-box">Column 2 (50%)</div>
+            </div>
+        </div>
+
+        <!--Three-Column Layout (33.3/33.3/33.3)-->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="grid-box">Column 1 (33.3%)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="grid-box">Column 2 (33.3%)</div>
+            </div>
+            <div class="col-md-4">
+                <div class="grid-box">Column 3 (33.3%)</div>
+            </div>
+        </div>
+
+        <!--Four-Column Layout (25/25/25/25)-->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="grid-box">Column 1 (25%)</div>
+            </div>
+            <div class="col-md-3">
+                <div class="grid-box">Column 2 (25%)</div>
+            </div>
+            <div class="col-md-3">
+                <div class="grid-box">Column 3 (25%)</div>
+            </div>
+            <div class="col-md-3">
+                <div class="grid-box">Column 4 (25%)</div>
+            </div>
+        </div>
+
+        <!--Responsive Mixed Layout-->
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <div class="grid-box">Column 1 (66.6% on large screens, full-width on smaller)</div>
+            </div>
+            <div class="col-lg-4">
+                <div class="grid-box">Column 2 (33.3% on large screens, full-width on smaller)</div>
+            </div>
+        </div>
+
+        <!--Responsive Mixed Layout-->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="grid-box">Full-width Column (100%)</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Listbox Section-->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Classics Spotlight</h2>
+        <div class="listbox-container">
+            <div class="listbox-wrapper">
+                <!--List Item 1-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/202d540b-5aa9-4d60-9c9a-86475b81d34d/KILLSHOT+2+LEATHER.png"
+                            class="card-img-top" alt="List item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Killshot 2 Leather</h5>
+                            <p class="card-text">Men's Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--List Item 2-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e3b020e-ab24-496b-b17c-ab25a03516ff/AIR+ZOOM+PEGASUS+41+PRM.png"
+                            class="card-img-top" alt="List item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Pegasus 41 Premium</h5>
+                            <p class="card-text">Men's Road Running Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--List Item 3-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/AIR+FORCE+1+%2707.png"
+                            class="card-img-top" alt="List item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Air Force 1</h5>
+                            <p class="card-text">Women's Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--List Item 4-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89b9c5f5-9049-422d-aa76-19ea5323ef58/WMNS+AIR+JORDAN+1+MID.png"
+                            class="card-img-top" alt="List item 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Air Jordan 1 Mid</h5>
+                            <p class="card-text">Women's Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--List Item 5-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9fe70154-e4bb-4bcc-9cf0-2efda240916c/NIKE+ZOOMX+VAPORFLY+NEXT%25+3.png"
+                            class="card-img-top" alt="List item 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Vaporfly 3</h5>
+                            <p class="card-text">Men's Road Racing Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--List Item 6-->
+                <div class="list-item">
+                    <div class="card mb-3">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e9dc7d31-f2ad-4577-bd3f-33ed7c34dfab/NIKE+ZOOM+VOMERO+5.png"
+                            class="card-img-top" alt="List item 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Zoom Vomero 5</h5>
+                            <p class="card-text">Men's Shoes.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Add more list items as needed-->
+            </div>
+            <button class="scroll-left" id="scrollLeft">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="scroll-right" id="scrollRight">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- card -->
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.nike.com/a/images/w_960,c_limit,q_auto,f_auto/c900b476-5456-49a2-8ed6-6e7e9502448c/dunk-high-x-wu-tang-clan.jpg"
+                        class="card-img-top" alt="card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dunk High x Wu-Tang Clan</h5>
+                        <p class="card-text">Behind the Sences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.nike.com/a/images/w_960,c_limit,q_auto,f_auto/7fc6b6a4-bc77-40cd-8fdf-f21a5b7bfd50/ice-cream.jpg"
+                        class="card-img-top" alt="card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">Nike Dunk High x Wu-Tang Clan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.nike.com/a/images/w_960,c_limit,q_auto,f_auto/cdef2671-fe2b-424f-9d0a-af9ad7744be1/dunk-high-x-wu-tang-clan.jpg"
+                        class="card-img-top" alt="card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dunk High x Wu-Tang Clan</h5>
+                        <p class="card-text">Coming Soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.nike.com/a/images/w_960,c_limit,q_auto,f_auto/a73ac097-4901-492e-8008-041fcc268e2d/women-s-air-jordan-11-bred-velvet-db5457-061-release-date.jpg"
+                        class="card-img-top" alt="card 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bred Velvet</h5>
+                        <p class="card-text">Women's Air Jordan 11.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="card mb-3">
+            <img src="bahan web.png" class="card-img-top" alt="Card image 5">
+            <div class="card-body">
+                <h5 class="card-title">New Apparel Jersey</h5>
+                <p class="card-text">Men's Apparel.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="bahan web2.png" class="card-img-top" alt="Card image 6">
+            <div class="card-body">
+                <h5 class="card-title">New Nike Phantom GX 2 Academy EasyOn Electric</h5>
+                <p class="card-text">MG Low-Top Football Boot.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5884b389-84de-46eb-98e9-543a27e43715/JR+ZM+VAPOR+16+PRO+MDS+FG.png"
+                        class="card-img-top" alt="card 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Jr. Vapor 16 Pro Mercurial Dream Speed</h5>
+                        <p class="card-text">Older Kids' FG Low-Top Football Boot.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 text-center">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f54be109-bac6-45b3-828e-38ca46fb6c28/SUPERFLY+10+CLUB+FG%2FMG.png"
+                        class="card-img-top" alt="card 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Mercurial Superfly 10 Club</h5>
+                        <p class="card-text">MG High-Top Football Boot.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 text-end">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c388c571-5bdb-4283-aee6-99a2a7086da7/CBF+M+NK+REISSUE+SS+JSY+EX2.png"
+                        class="card-img-top" alt="card 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Brazil 1998 Reissue</h5>
+                        <p class="card-text">Men's Nike Football Replica Shirt.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b36dee0e-85b7-481b-987c-e942f44fc62f/FCB+MNK+DFADV+JSYSS+MATCH+HM.png"
+                        class="card-img-top" alt="card 7">
+                    <div class="card-body">
+                        <h5 class="card-title">F.C. Barcelona 2024/25 Match Home</h5>
+                        <p class="card-text">Men's Nike Dri-FIT ADV Football Authentic Shirt.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 text-center">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1803451f-e3b9-4392-8c7a-b3344420e7b7/PSG+W+NK+DF+STAD+JSY+SS+HM.png"
+                        class="card-img-top" alt="card 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris Saint-Germain 2024 Stadium Home</h5>
+                        <p class="card-text">Women's Nike Dri-FIT Football Replica Shirt.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100 text-end">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57f55192-9f0f-4ce9-a9f8-f06ef48bbb6c/AS+W+NK+DF+GO+HR+7%2F8+TGHT.png"
+                        class="card-img-top" alt="card 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Go</h5>
+                        <p class="card-text">Women's Firm-Support High-Waisted 7/8 Leggings with Pockets.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form contact -->
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <h1 class="mb-4">Contact Us</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <!-- email \ -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    </div>
+                    <!-- pesan atau message -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <!-- switch check box -->
+                    <div class="mb-3 form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="subscribe">
+                        <label class="form-check-label" for="subscribe">Subscribe to newsletter</label>
+                    </div>
+                    <!-- button submit -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark">
+        <!-- tabs navs -->
+        <ul class="nav nav-tabs nav-fill mb-3" id="footer-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="footer-tab-1" data-bs-toggle="tab" href="#footer-tab-content-1"
+                    role="tab" aria-controls="footer-tab-content-1" aria-selected="true">
+                    COMPANY NAME
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="footer-tab-2" data-bs-toggle="tab" href="#footer-tab-content-2" role="tab"
+                    aria-controls="footer-tab-content-2" aria-selected="false">
+                    PRODUCTS
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="footer-tab-3" data-bs-toggle="tab" href="#footer-tab-content-3" role="tab"
+                    aria-controls="footer-tab-content-3" aria-selected="false">
+                    USEFUL LINKS
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="footer-tab-4" data-bs-toggle="tab" href="#footer-tab-content-4" role="tab"
+                    aria-controls="footer-tab-content-4" aria-selected="false">
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+        <!-- tabs content -->
+        <div class="tab-content" id="footer-tab-content">
+            <div class="tab-pane fade show active" id="footer-tab-content-1" role="tabpanel"
+                aria-labelledby="footer-tab-1">
+                <p> Here you can use rows and columns to organize your footer content.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="footer-tab-content-2" role="tabpanel" aria-labelledby="footer-tab-2">
+
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li>Anggular</li>
+                            <li>React</li>
+                            <li>vue</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li>Anggular</li>
+                            <li>React</li>
+                            <li>vue</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li>Anggular</li>
+                            <li>React</li>
+                            <li>vue</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li>Anggular</li>
+                            <li>React</li>
+                            <li>vue</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="footer-tab-content-3" role="tabpanel" aria-labelledby="footer-tab-3">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="footer-tab-content-4" role="tabpanel" aria-labelledby="footer-tab-4">
+                <p>
+                    <i class="bi bi-house-door-fill"></i>
+                    New York, NY 10012, US
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    info@xample.com
+                </p>
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    + 01 234 567 88
+                </p>
+                <p>
+                    <i class="bi bi-printer-fill"></i>
+                    + 01 234 567 89
+                </p>
+            </div>
+        </div>
+        <!-- Remove the container if you want the footer to be full width. -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-facebook" style="color: #fff;"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-twitter" style="color: #fff;"></i>
+                    </a>
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-google" style="color: #fff;"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-instagram" style="color: #fff;"></i>
+                    </a>
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-linkedin" style="color: #fff;"></i>
+                    </a>
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-github" style="color: #fff;"></i>
+                    </a>
+                </section>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #212529;">
+                © 2024 Copyright:
+                <a class="text-white" href="http://mdbootstrap.com">https://www.nike.com/id/</a>
+            </div>
+        </footer>
+    </footer>
+
+    <!--Bootstrap JS Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
